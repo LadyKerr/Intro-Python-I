@@ -12,10 +12,10 @@ for more info regarding list comprehensions.
 
 y = []
 
-for i in range(6): #range of 6 because python wont read the last value 6
+for i in range(6):  # range of 6 because python wont read the last value 6
     y.append(i)
 
-print (y[1:]) #this will print from the second index 1, leaving out the first index 0
+print(y[1:])  # this will print from the second index 1, leaving out the first index 0
 print()
 
 # 2. Write a list comprehension to produce the cubes of the numbers 0-9:
@@ -24,7 +24,7 @@ print()
 y = []
 
 for x in range(10):
-    y.append(x * x * x) #cube - the number multiplied by itself 3 times
+    y.append(x * x * x)  # cube - the number multiplied by itself 3 times
 
 print(y)
 print()
@@ -36,7 +36,8 @@ a = ["foo", "bar", "baz"]
 
 y = []
 
-for i, v in enumerate(a): #enumerate returns the index & the value. by accessing the value I can copy the list
+# enumerate returns the index & the value. by accessing the value I can copy the list
+for i, v in enumerate(a):
     y.append(v.upper())
 
 print(y)
