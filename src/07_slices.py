@@ -46,5 +46,9 @@ print(a[:-1])
 s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
+print(s)
 print()
-print(s[7:12]) #with strings the last index is included but the first index is not, so opposite of what lists/tuples do
+print(s[:]) #printing the entire string using slice()
+print()
+print(s[7:12]) 
+#with strings the last index is included but the first index is not, so opposite of what lists/tuples do

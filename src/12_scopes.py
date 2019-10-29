@@ -6,8 +6,9 @@ x = 12
 
 def changeX():
     x = 99
+    print(x)
 
-changeX()
+changeX() #99
 
 # This prints 12. What do we have to modify in changeX() to get it to print 99?
 print(x)
@@ -20,6 +21,7 @@ def outer():
 
     def inner():
         y = 999
+        print(y)
 
     inner()
 
