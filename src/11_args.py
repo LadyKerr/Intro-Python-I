@@ -19,7 +19,7 @@ def f2(*args):
     x = 0
     for num in args:
         x += num
-    print(x)
+    return x
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
@@ -37,9 +37,9 @@ print(f2(a))    # Should print 22
 # arguments. Google "python default arguments" for a hint.
 
 # YOUR CODE HERE
-def f3(b, x=2):
-    if(x):
-         return sum((x, 1))
+def f3(b, x=""):
+    if(x == ""):
+         return sum((b, 1))
     else:
          return sum((x, b))
 
