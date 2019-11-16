@@ -22,3 +22,28 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+calendar.setfirstweekday(6)
+
+# setting variables globally
+today = datetime.today()
+curr_month = today.month
+curr_year = today.year
+
+
+def print_date(year, month):
+    if year == "":
+        year = curr_year
+
+    if month == "":
+        month = curr_month
+
+    cal = calendar.month(int(year), int(month))
+
+    print(cal)
+
+
+month = input("Enter a month: ")
+year = input("Enter a year: ")
+
+print_date(year, month)
